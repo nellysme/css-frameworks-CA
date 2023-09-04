@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-  <link rel="stylesheet" href="/dist/css/index.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeowFeed</title>
+    <link rel="stylesheet" href="/dist/css/index.css">
 </head>
 <body>
-  <button class="btn btn-success">Hello World</button>
-  
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center" style="max-width: 800px;">
+        <div class="d-flex flex-column align-items-center">
+            <img class="p-4 w-50" src="img/catpaw-orange.png" alt="cat-paw" style="transform: rotate(17deg);">
+            <form action="feed/index.html" class="p-3 container w-75" minlength="8">
+                <div class="form-floating mb-3">
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                    />
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input
+                        minlength="8"
+                        type="password"
+                        class="form-control"
+                        id="floatingPassword"
+                        placeholder="Password"
+                        required
+                    />
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <div class="container d-flex flex-column align-items-center">
+                    <button class="w-100 btn btn-lg btn-primary mt-4 mb-4" id="login" type="submit" onclick="window.location='profile/index.html'">
+                        Log in
+                    </button>
+                    <p class="text-center">Don't have an account yet? <a href="#">Sign up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
