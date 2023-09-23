@@ -1,7 +1,7 @@
-#image-profile{
-  background-color: $orange;
+#image-profile {
+  background-color: map-get($colors, "orange");
 }
 
-.btn-primary{
-  color: $orange;
+.bg-orange {
+  background-color: $orange;
 }

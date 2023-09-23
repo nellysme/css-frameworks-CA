@@ -1,17 +1,16 @@
 .btn {
-  border-radius: $btn-border-radius;
+  border-radius: map-get($dimensions, "btn-border-radius");
 }
 
 #login {
-  border: $orange;
-  background: $orange;
-  box-shadow: 0px 3px 4px -1px #ff910029;
-  color: $white;
-  height: 58px;
+  border: map-get($colors, "orange");
+  background: map-get($colors, "orange");
+
+  &:hover {
+    border: 2px solid $gray-800;
+  }
 }
 
-#login:hover {
-  border: 2px solid $gray-800;
+.image {
+  transform: rotate(17deg);
 }
-
-
